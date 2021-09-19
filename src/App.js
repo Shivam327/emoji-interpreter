@@ -1,41 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-
-/**
- * concept notes: styling in react
- */
-
-const emojiDictionary = {
-  "😀": "Grinning Face",
-  "😗": "Kissing Face",
-  "😋": "Face Savoring Food",
-  "😴": "Sleeping Face",
-  "👿": "Angry Face with Horns",
-  "🎤": "Mic",
-  "💘": "Heart with Arrow",
-  "💓": "Beating Heart",
-  "💔": "Broken Heart",
-  "💚": "Green Heart",
-  "🌀": "Cyclone",
-  "♣️": "Club Suit",
-  "🔇": "Muted Speaker",
-  "🔔": "Bell",
-  "🚮": "Litter in Bin Sign",
-  "📵": "No Mobile Phones",
-  "⬆️": "Up Arrow",
-  "➡️ ": "Right Arrow",
-  "⬇️": "Down Arrow",
-  "⬅️": "Left Arrow",
-  "⚛️": "Atom Symbol",
-  "▶️": "Play Button",
-  "⏸️": "Pause Button",
-  "🎦": "Cinema",
-  "📴": "Mobile Phone Off",
-  "♾️": "Infinity",
-  "♻️": "Recycling Symbol",
-  " ©️": "Copyright",
-  "🔺": "Red Triangle Pointed Up",
-};
+import { emojiDictionary } from "./emoji";
 
 const emojis = Object.keys(emojiDictionary);
 
@@ -60,7 +25,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1 className="head">Emoji's World</h1>
+      <h1 className="head">Emoji Dictionary</h1>
       <input
         onChange={changeHandler}
         value={emoji}

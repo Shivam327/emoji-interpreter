@@ -35,6 +35,7 @@ input {
   flex-wrap: wrap;
 }
 .emoji {
+  cursor: pointer;
   font-size: 2.2rem;
   padding: 2rem;
 }
